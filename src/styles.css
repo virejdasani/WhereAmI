@@ -1,6 +1,7 @@
 head, body {
-    background-color: antiquewhite;
+    background-color: rgb(88, 88, 88);
     text-align: center;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     width: 180px;
 }
