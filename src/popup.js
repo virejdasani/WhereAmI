@@ -37,9 +37,11 @@ window.onload = function () {
                 <h2>Lat/Lon:</h2>
                 <h2 class="data">${lat}/${lon}</h2>
                 `
-                document.getElementById("moreButton").innerHTML = "Show less"
+                // Change button
+                document.getElementById("moreButton").innerHTML = "Hide"
                 document.getElementById("moreButton").id = "hideButton"
                 
+                // Hide button onClick listener
                 document.getElementById('hideButton').addEventListener('click', function () {
                     document.getElementById('more').innerHTML = ""
                     document.getElementById("hideButton").innerHTML = "Show more"
