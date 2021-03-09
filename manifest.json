@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+
+    "name": "Where Am I?",
+    "description": "This extension shows your location and IP address",
+    "version": "1.0",
+
+    "browser_action": {
+        // "default_icon": "src/assets/img/icon.png",
+        "default_popup": "public/popup.html"
+    }
+}
