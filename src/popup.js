@@ -1,5 +1,5 @@
 window.onload = function () {
-// Get Location from IP
+    // Get Location from IP
     console.log('fetching')
     fetch('http://ip-api.com/json/')
         .then(function (response) {
@@ -14,11 +14,14 @@ window.onload = function () {
 
             if (status == "success") {
                 document.getElementById("location").innerHTML = country + ", " + city
-            }
-            else {
+                document.getElementById('ip').innerHTML = ip
+            } else {
                 document.getElementById("location").innerHTML = "ERROR"
             }
+            // More button onClick listener
+            document.getElementById("moreButton").addEventListener('click', function () {
+                document.getElementById("more").innerHTML = country
+            })
         })
-}   
-
-
+    
+}

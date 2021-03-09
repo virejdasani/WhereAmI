@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Where Am I?</title>
+    <link rel="stylesheet" href="../src/styles.css">
 </head>
-<body onload="getLocation()">
-    <!-- Title -->
-    <h2>Where Am I?</h2>
 
-    <!-- Location div -->
-    <h3 id="location">location</h3>
+<body onload="getLocation()">
+
+    <h5 id="credits">Developed by <a target="_blank" href="https://virejdasani.github.io/virej/">@VirejDasani</a></h5>
+
+    <!-- Title -->
+    <h1 id="title">Where Am I?</h1>
+
+    <!-- Location -->
+    <h2 id="itemHeader">Location:</h2>
+    <h2 id="location">Loading...</h2>
+
+    <!-- IP address -->
+    <h2 id="itemHeader">IP Address:</h2>
+    <h2 id="ip">Loading...</h2>
+
+    <!-- More button -->
+    <button id="moreButton">More</button>
+
+    <div id="more"></div>
 
     <script src="../src/popup.js"></script>
 </body>
+
 </html>
