@@ -19,7 +19,9 @@ window.onload = function () {
 
             if (status == "success") {
                 document.getElementById("location").innerHTML = country + ", " + city
-                document.getElementById('ip').innerHTML = ip
+                document.getElementById("showIP").addEventListener('click', function () {
+                    document.getElementById('ip').innerHTML = `<h2 class="data" id="ip">${ip}</h2>`
+                })
             } else {
                 document.getElementById("location").innerHTML = "ERROR"
             }

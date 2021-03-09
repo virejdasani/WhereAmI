@@ -22,6 +22,14 @@ head, body {
     padding: 5px;
 }
 
+#showIP {
+    background-color: rgb(204, 207, 204);
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+    margin-bottom: 4px;
+}
+
 a:link,
 a:visited {
     color: rgb(119, 153, 244);
