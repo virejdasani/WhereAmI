@@ -9,12 +9,12 @@ head, body {
     text-align: center;
 }
 
-#location, #ip {
+.data {
     color: #45b4ff;
     text-align: center;
 }
 
-#moreButton {
+#moreButton, #hideButton {
     background-color: rgb(204, 207, 204);
     border-radius: 4px;
     border: none;
