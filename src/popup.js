@@ -25,6 +25,7 @@ window.onload = function () {
             }
             // More button onClick listener
             document.getElementById("moreButton").addEventListener('click', function () {
+                // Hide the show more button
                 document.getElementById('moreButton').style.visibility = 'hidden'
                 // Show more data
                 document.getElementById("more").innerHTML = `
@@ -45,6 +46,7 @@ window.onload = function () {
                 // Hide button onClick listener
                 document.getElementById('hideButton').addEventListener('click', function () {
                     document.getElementById('more').innerHTML = ""
+                    // Make the show more button visible again
                     document.getElementById('moreButton').style.visibility = 'visible'
                 })
             })
