@@ -14,8 +14,8 @@ window.onload = function () {
             let zip = data.zip
             let isp = data.isp
             let timezone = data.timezone
-            let lat = data.lat
-            let lon = data.lon
+            // let lat = data.lat
+            // let lon = data.lon
 
             if (status == "success") {
                 document.getElementById("location").innerHTML = country + ", " + city
@@ -25,6 +25,7 @@ window.onload = function () {
             }
             // More button onClick listener
             document.getElementById("moreButton").addEventListener('click', function () {
+                document.getElementById('moreButton').style.visibility = 'hidden'
                 // Show more data
                 document.getElementById("more").innerHTML = `
                 <h4>This data below may not be exact</h4>
@@ -34,18 +35,17 @@ window.onload = function () {
                 <h2 class="data">${isp}</h2>
                 <h2>Timezone:</h2>
                 <h2 class="data">${timezone}</h2>
-                <h2>Lat/Lon:</h2>
-                <h2 class="data">${lat}/${lon}</h2>
+                <button id="hideButton">Show less</button>
                 `
-                // Change button
-                document.getElementById("moreButton").innerHTML = "Hide"
-                document.getElementById("moreButton").id = "hideButton"
-                
+                // This is to show the latitude and longitude. It is unnecessary
+                // <h2>Lat/Lon:</h2>
+                // <h2 class="data">${lat}/${lon}</h2>
+
+
                 // Hide button onClick listener
                 document.getElementById('hideButton').addEventListener('click', function () {
                     document.getElementById('more').innerHTML = ""
-                    document.getElementById("hideButton").innerHTML = "Show more"
-                    document.getElementById("hideButton").id = "moreButton"
+                    document.getElementById('moreButton').style.visibility = 'visible'
                 })
             })
         })
