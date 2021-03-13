@@ -31,9 +31,6 @@ window.onload = function () {
                 document.getElementById('moreButton').style.visibility = 'hidden'
                 // Show more data
                 document.getElementById("more").innerHTML = `
-                <h4>This data below may not be exact</h4>
-                <h2>Zip Code:</h2>
-                <h2 class="data">${zip}</h2>
                 <h2>ISP:</h2>
                 <h2 class="data">${isp}</h2>
                 <h2>Timezone:</h2>
