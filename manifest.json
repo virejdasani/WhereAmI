@@ -2,7 +2,7 @@
     "manifest_version": 2,
 
     "name": "Where Am I?",
-    "description": "This extension shows your location and IP address",
+    "description": "This extension shows your location and IP address so you can check if your VPN works!",
     "version": "1.0",
     "icons": {
         "16": "assets/img/icon16.png",
